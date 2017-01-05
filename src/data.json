@@ -1,0 +1,394 @@
+[
+    {
+        "Id": "39da8ea7c368e52a54bb61ed99c18e7c2d05417fa8f4a722a580464f81584917",
+        "Created": "2017-01-05T19:08:36.137216213Z",
+        "Path": "/usr/bin/supervisord",
+        "Args": [
+            "-c",
+            "/etc/container/supervisord.conf"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 18530,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2017-01-05T19:08:37.090431204Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:9b493c5fd1b4ba233250baf0419657e6974ed5a704a54fdb1ed16c30a8c63edd",
+        "ResolvConfPath": "/var/lib/docker/containers/39da8ea7c368e52a54bb61ed99c18e7c2d05417fa8f4a722a580464f81584917/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/39da8ea7c368e52a54bb61ed99c18e7c2d05417fa8f4a722a580464f81584917/hostname",
+        "HostsPath": "/var/lib/docker/containers/39da8ea7c368e52a54bb61ed99c18e7c2d05417fa8f4a722a580464f81584917/hosts",
+        "LogPath": "/var/lib/docker/containers/39da8ea7c368e52a54bb61ed99c18e7c2d05417fa8f4a722a580464f81584917/39da8ea7c368e52a54bb61ed99c18e7c2d05417fa8f4a722a580464f81584917-json.log",
+        "Name": "/send-server_UA",
+        "RestartCount": 0,
+        "Driver": "devicemapper",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "13eefe51a7d0b36e9114ca9cc1238c22528904693caa722f26288a2044d9d90b:/var/log/supervisor:rw",
+                "/volumes/files/ua/translator/extract_slow:/appl/aspcore/t_scan/extract_slow:rw",
+                "/volumes/files/ua/translator/extract_no_th:/appl/aspcore/t_scan/extract_no_th:rw",
+                "/volumes/files/ua/translator/extract3:/appl/aspcore/t_scan/extract3:rw",
+                "/volumes/files/ua/translator/extract:/appl/aspcore/t_scan/extract:rw",
+                "/volumes/files/ua/translator/error:/appl/aspcore/t_scan/error:rw",
+                "/volumes/files/ua/translator/extract2:/appl/aspcore/t_scan/extract2:rw",
+                "/volumes/files/ua/translator/notifications:/appl/aspcore/t_scan/notifications:rw",
+                "/volumes/files/ua/translator/extract1:/appl/aspcore/t_scan/extract1:rw",
+                "/volumes/files/ua/translator/extract6:/appl/aspcore/t_scan/extract6:rw",
+                "/volumes/files/ua/translator/extract4:/appl/aspcore/t_scan/extract4:rw",
+                "/volumes/files/ua/translator/extract5:/appl/aspcore/t_scan/extract5:rw",
+                "/volumes/files/ua/translator/collect:/appl/aspcore/t_scan/collect:rw",
+                "/volumes/files/ua/translator/PostProcess:/appl/aspcore/t_scan/PostProcess:rw",
+                "/volumes/files/ua/translator/extract_priority:/appl/aspcore/t_scan/extract_priority:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "staging_aesnet-ua",
+            "PortBindings": {
+                "22/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "30022"
+                    }
+                ],
+                "7788/tcp": [
+                    {
+                        "HostIp": "10.185.4.115",
+                        "HostPort": "7788"
+                    }
+                ],
+                "8080/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8001"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "always",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": [],
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "Tmpfs": {
+                "/appl/aspcore/t_scan/temp": "",
+                "/run": "",
+                "/tmp": ""
+            },
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 100000,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": -1,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0
+        },
+        "GraphDriver": {
+            "Name": "devicemapper",
+            "Data": {
+                "DeviceId": "1343",
+                "DeviceName": "docker-202:1-128939-8b262d295d883e1f6c554e1c3d9f78ed0c7276f712df6901f23b63c4d8ce953f",
+                "DeviceSize": "42949672960"
+            }
+        },
+        "Mounts": [
+            {
+                "Source": "/volumes/files/ua/translator/extract_slow",
+                "Destination": "/appl/aspcore/t_scan/extract_slow",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Source": "/volumes/files/ua/translator/notifications",
+                "Destination": "/appl/aspcore/t_scan/notifications",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Source": "/volumes/files/ua/translator/extract4",
+                "Destination": "/appl/aspcore/t_scan/extract4",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Source": "/volumes/files/ua/translator/extract5",
+                "Destination": "/appl/aspcore/t_scan/extract5",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Source": "/volumes/files/ua/translator/PostProcess",
+                "Destination": "/appl/aspcore/t_scan/PostProcess",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Source": "/volumes/files/ua/translator/extract3",
+                "Destination": "/appl/aspcore/t_scan/extract3",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Source": "/volumes/files/ua/translator/error",
+                "Destination": "/appl/aspcore/t_scan/error",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Source": "/volumes/files/ua/translator/extract1",
+                "Destination": "/appl/aspcore/t_scan/extract1",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Source": "/volumes/files/ua/translator/collect",
+                "Destination": "/appl/aspcore/t_scan/collect",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Source": "/volumes/files/ua/translator/extract_priority",
+                "Destination": "/appl/aspcore/t_scan/extract_priority",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Name": "13eefe51a7d0b36e9114ca9cc1238c22528904693caa722f26288a2044d9d90b",
+                "Source": "/var/lib/docker/volumes/13eefe51a7d0b36e9114ca9cc1238c22528904693caa722f26288a2044d9d90b/_data",
+                "Destination": "/var/log/supervisor",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Source": "/volumes/files/ua/translator/extract_no_th",
+                "Destination": "/appl/aspcore/t_scan/extract_no_th",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Source": "/volumes/files/ua/translator/extract",
+                "Destination": "/appl/aspcore/t_scan/extract",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Source": "/volumes/files/ua/translator/extract2",
+                "Destination": "/appl/aspcore/t_scan/extract2",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Source": "/volumes/files/ua/translator/extract6",
+                "Destination": "/appl/aspcore/t_scan/extract6",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "send-server-ua-staging",
+            "Domainname": "ec-power.com",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "22/tcp": {},
+                "7788/tcp": {},
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "affinity:container==0bf852d4e81d7e795e3c8b47b3f06c344b02350248ab6e7a5e9228f6e0259e63",
+                "SERVER_MODE=default",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/java/jdk1.8.0_112/bin:/usr/java/jdk1.8.0_112/jre/bin:/opt/pgp/bin:/usr/local/apache-maven-3.3.9/bin",
+                "JAVA_HOME=/usr/java/jdk1.8.0_112",
+                "JRE_HOME=/usr/java/jdk1.8.0_112/jre",
+                "MAVEN_HOME=/usr/local/apache-maven-3.3.9",
+                "ENV_TYPE=UA",
+                "USER_SCAN=t_scan",
+                "GIT_CONFIG_HOME=/appl/git/configs",
+                "JENKINS_JNLP_URL=http://service-server:50450/computer/send-server/slave-agent.jnlp",
+                "JENKINS_SECRET=0b70a445e1f8384e44f93428e940bea5d358caf4142da317396210d4c367bfda",
+                "JENKINS_AGENT_HOME=/opt/jenkins-agent",
+                "TERM=xterm",
+                "TIMEZONE=America/Chicago",
+                "BUILD_NUMBER=17.01.1191-latest-UA"
+            ],
+            "Cmd": null,
+            "Image": "892905447879.dkr.ecr.us-east-1.amazonaws.com/aurea/aes/edi/translator-send-server:latest-UA",
+            "Volumes": {
+                "/appl/aspcore/t_scan/PostProcess": {},
+                "/appl/aspcore/t_scan/collect": {},
+                "/appl/aspcore/t_scan/error": {},
+                "/appl/aspcore/t_scan/extract": {},
+                "/appl/aspcore/t_scan/extract1": {},
+                "/appl/aspcore/t_scan/extract2": {},
+                "/appl/aspcore/t_scan/extract3": {},
+                "/appl/aspcore/t_scan/extract4": {},
+                "/appl/aspcore/t_scan/extract5": {},
+                "/appl/aspcore/t_scan/extract6": {},
+                "/appl/aspcore/t_scan/extract_no_th": {},
+                "/appl/aspcore/t_scan/extract_priority": {},
+                "/appl/aspcore/t_scan/extract_slow": {},
+                "/appl/aspcore/t_scan/notifications": {},
+                "/var/log/supervisor": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/usr/bin/supervisord",
+                "-c",
+                "/etc/container/supervisord.conf"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "build-date": "20161214",
+                "com.aurea.aesedi.build.date": "2017.01.05",
+                "com.aurea.aesedi.build.number": "17.01.1191-latest-UA",
+                "com.docker.compose.config-hash": "76b0570c3e85009e706393eb4bd942a84cb9687304d3dce9e3e495f0633cc086",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "staging",
+                "com.docker.compose.service": "send",
+                "com.docker.compose.version": "1.9.0",
+                "license": "GPLv2",
+                "name": "CentOS Base Image",
+                "vendor": "CentOS"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "801b6fb33df84ff4f6e8bb522de214e6cd7bef59aacb6767af458e0f32f3cc42",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "22/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "30022"
+                    }
+                ],
+                "7788/tcp": [
+                    {
+                        "HostIp": "10.185.4.115",
+                        "HostPort": "7788"
+                    }
+                ],
+                "8080/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "8001"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/801b6fb33df8",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "staging_aesnet-ua": {
+                    "IPAMConfig": {
+                        "IPv4Address": "193.169.1.8"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "39da8ea7c368",
+                        "send-server-ua",
+                        "send"
+                    ],
+                    "NetworkID": "70db929f7c75b12841a7d3a63c46978be9e2c44a0ccb9db7424879cf3be29887",
+                    "EndpointID": "98f9864490d66faf0d4a9ea93ad33949b6af95d74f57d2362d65f434e100e85d",
+                    "Gateway": "193.169.1.1",
+                    "IPAddress": "193.169.1.8",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:c1:a9:01:08"
+                }
+            }
+        }
+    }
+]
